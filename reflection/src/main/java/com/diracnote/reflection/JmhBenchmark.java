@@ -44,70 +44,70 @@ public class JmhBenchmark {
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String immutableInterfaceDirect() {
+    public String Immutable_Interface_Direct() {
         return iImmutable.getName();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String mutableInterfaceDirect() {
+    public String Mutable_Interface_Direct() {
         return iMutable.getName();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String immutableObjectDirect() {
+    public String Immutable_Object_Direct() {
         return oImmutable.getName();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String mutableObjectDirect() {
+    public String Mutable_Object_Direct() {
         return oMutable.getName();
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String immutableInterfaceReflection() throws Exception {
+    public String Immutable_Interface_Reflection() throws Exception {
         return (String) INTERFACE_METHOD.invoke(iImmutable);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String mutableInterfaceReflection() throws Exception {
+    public String Mutable_Interface_Reflection() throws Exception {
         return (String) INTERFACE_METHOD.invoke(iMutable);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String immutableInterfaceReflectionNoAccess() throws Exception {
+    public String Immutable_Interface_Reflection_WithoutSetAccessible() throws Exception {
         return (String) INTERFACE_METHOD_NOACCESS.invoke(iImmutable);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String mutableInterfaceReflectionNoAccess() throws Exception {
+    public String Mutable_Interface_Reflection_WithoutSetAccessible() throws Exception {
         return (String) INTERFACE_METHOD_NOACCESS.invoke(iMutable);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String immutableObjectReflection() throws Exception {
+    public String Immutable_Object_Reflection() throws Exception {
         return (String) OBJECT_IMMUTABLE_METHOD.invoke(oImmutable);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public String mutableObjectReflection() throws Exception {
+    public String Mutable_Object_Reflection() throws Exception {
         return (String) OBJECT_MUTABLE_METHOD.invoke(oMutable);
     }
 
