@@ -2,6 +2,17 @@
 
 Some collections of jmh benchmarks for Java.
 
+# Table of Contents
+ - [Build](#Build)
+ - [Benchmarks](#Benchmarks)
+     - [Reflection](#Reflection)
+         - [Differences from original case](#Differences from original case)
+         - [Run](#Run)
+         - [Benchmark result](#Benchmark result)
+         - [Notes](#Notes)
+              - [Method.invoke()](#Method.invoke())
+              - [Field.get()](#Field.get())
+
 ## Build
 
 Build the package with Maven:
