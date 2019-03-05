@@ -1,0 +1,127 @@
+# JMH version: 1.20
+# VM version: JDK 1.8.0_161, VM 25.161-b12
+# VM invoker: D:\app\Java\jdk1.8.0_161\jre\bin\java.exe
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.diracnote.enums.JmhBenchmark.Enums_Access_By_Iterator
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 18.270 ns/op
+# Warmup Iteration   2: 12.090 ns/op
+# Warmup Iteration   3: 11.273 ns/op
+# Warmup Iteration   4: 11.435 ns/op
+# Warmup Iteration   5: 11.406 ns/op
+# Warmup Iteration   6: 11.327 ns/op
+# Warmup Iteration   7: 11.431 ns/op
+# Warmup Iteration   8: 11.293 ns/op
+# Warmup Iteration   9: 11.254 ns/op
+# Warmup Iteration  10: 11.367 ns/op
+# Warmup Iteration  11: 12.635 ns/op
+# Warmup Iteration  12: 11.388 ns/op
+# Warmup Iteration  13: 11.268 ns/op
+# Warmup Iteration  14: 11.425 ns/op
+# Warmup Iteration  15: 11.262 ns/op
+# Warmup Iteration  16: 11.520 ns/op
+# Warmup Iteration  17: 11.405 ns/op
+# Warmup Iteration  18: 11.423 ns/op
+# Warmup Iteration  19: 11.372 ns/op
+# Warmup Iteration  20: 11.271 ns/op
+Iteration   1: 11.463 ns/op
+Iteration   2: 11.333 ns/op
+Iteration   3: 11.447 ns/op
+Iteration   4: 11.438 ns/op
+Iteration   5: 11.442 ns/op
+Iteration   6: 11.474 ns/op
+Iteration   7: 11.402 ns/op
+Iteration   8: 11.431 ns/op
+Iteration   9: 11.509 ns/op
+Iteration  10: 11.327 ns/op
+Iteration  11: 11.407 ns/op
+Iteration  12: 11.306 ns/op
+Iteration  13: 11.422 ns/op
+Iteration  14: 11.361 ns/op
+Iteration  15: 11.421 ns/op
+Iteration  16: 11.472 ns/op
+Iteration  17: 11.366 ns/op
+Iteration  18: 11.267 ns/op
+Iteration  19: 11.313 ns/op
+Iteration  20: 11.374 ns/op
+
+
+Result "com.diracnote.enums.JmhBenchmark.Enums_Access_By_Iterator":
+  11.399 ¡À(99.9%) 0.057 ns/op [Average]
+  (min, avg, max) = (11.267, 11.399, 11.509), stdev = 0.065
+  CI (99.9%): [11.342, 11.455] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_161, VM 25.161-b12
+# VM invoker: D:\app\Java\jdk1.8.0_161\jre\bin\java.exe
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.diracnote.enums.JmhBenchmark.Enums_Access_By_Map
+
+# Run progress: 50.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 7.085 ns/op
+# Warmup Iteration   2: 6.481 ns/op
+# Warmup Iteration   3: 5.989 ns/op
+# Warmup Iteration   4: 5.976 ns/op
+# Warmup Iteration   5: 5.944 ns/op
+# Warmup Iteration   6: 5.979 ns/op
+# Warmup Iteration   7: 5.942 ns/op
+# Warmup Iteration   8: 5.975 ns/op
+# Warmup Iteration   9: 5.977 ns/op
+# Warmup Iteration  10: 5.985 ns/op
+# Warmup Iteration  11: 5.937 ns/op
+# Warmup Iteration  12: 5.938 ns/op
+# Warmup Iteration  13: 5.929 ns/op
+# Warmup Iteration  14: 5.980 ns/op
+# Warmup Iteration  15: 5.978 ns/op
+# Warmup Iteration  16: 5.964 ns/op
+# Warmup Iteration  17: 5.444 ns/op
+# Warmup Iteration  18: 5.531 ns/op
+# Warmup Iteration  19: 5.559 ns/op
+# Warmup Iteration  20: 5.552 ns/op
+Iteration   1: 5.549 ns/op
+Iteration   2: 5.564 ns/op
+Iteration   3: 5.575 ns/op
+Iteration   4: 5.583 ns/op
+Iteration   5: 5.593 ns/op
+Iteration   6: 5.542 ns/op
+Iteration   7: 5.627 ns/op
+Iteration   8: 5.641 ns/op
+Iteration   9: 5.527 ns/op
+Iteration  10: 5.765 ns/op
+Iteration  11: 5.629 ns/op
+Iteration  12: 5.599 ns/op
+Iteration  13: 5.595 ns/op
+Iteration  14: 5.550 ns/op
+Iteration  15: 5.579 ns/op
+Iteration  16: 5.529 ns/op
+Iteration  17: 5.604 ns/op
+Iteration  18: 5.513 ns/op
+Iteration  19: 5.573 ns/op
+Iteration  20: 5.539 ns/op
+
+
+Result "com.diracnote.enums.JmhBenchmark.Enums_Access_By_Map":
+  5.584 ¡À(99.9%) 0.048 ns/op [Average]
+  (min, avg, max) = (5.513, 5.584, 5.765), stdev = 0.056
+  CI (99.9%): [5.536, 5.632] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:21
+
+Benchmark                              Mode  Cnt   Score   Error  Units
+JmhBenchmark.Enums_Access_By_Iterator  avgt   20  11.399 ¡À 0.057  ns/op
+JmhBenchmark.Enums_Access_By_Map       avgt   20   5.584 ¡À 0.048  ns/op
