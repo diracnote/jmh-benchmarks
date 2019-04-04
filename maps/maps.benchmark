@@ -1,0 +1,127 @@
+# JMH version: 1.20
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.diracnote.maps.JmhBenchmark.ConcurrentHashMap_PUT_Single_Thread
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 57061.295 ns/op
+# Warmup Iteration   2: 50658.091 ns/op
+# Warmup Iteration   3: 60535.181 ns/op
+# Warmup Iteration   4: 44893.081 ns/op
+# Warmup Iteration   5: 44589.205 ns/op
+# Warmup Iteration   6: 45069.214 ns/op
+# Warmup Iteration   7: 54260.582 ns/op
+# Warmup Iteration   8: 41096.810 ns/op
+# Warmup Iteration   9: 41024.797 ns/op
+# Warmup Iteration  10: 44879.092 ns/op
+# Warmup Iteration  11: 43127.322 ns/op
+# Warmup Iteration  12: 42668.202 ns/op
+# Warmup Iteration  13: 40943.321 ns/op
+# Warmup Iteration  14: 45901.119 ns/op
+# Warmup Iteration  15: 41123.372 ns/op
+# Warmup Iteration  16: 40981.248 ns/op
+# Warmup Iteration  17: 42749.263 ns/op
+# Warmup Iteration  18: 40326.495 ns/op
+# Warmup Iteration  19: 43928.835 ns/op
+# Warmup Iteration  20: 45120.970 ns/op
+Iteration   1: 43085.125 ns/op
+Iteration   2: 44840.970 ns/op
+Iteration   3: 43052.045 ns/op
+Iteration   4: 48709.940 ns/op
+Iteration   5: 44103.526 ns/op
+Iteration   6: 43104.179 ns/op
+Iteration   7: 43848.241 ns/op
+Iteration   8: 48332.850 ns/op
+Iteration   9: 46423.970 ns/op
+Iteration  10: 44853.780 ns/op
+Iteration  11: 43428.888 ns/op
+Iteration  12: 42765.211 ns/op
+Iteration  13: 43084.707 ns/op
+Iteration  14: 41418.754 ns/op
+Iteration  15: 43102.960 ns/op
+Iteration  16: 42386.603 ns/op
+Iteration  17: 42765.950 ns/op
+Iteration  18: 44120.631 ns/op
+Iteration  19: 43116.014 ns/op
+Iteration  20: 42862.165 ns/op
+
+
+Result "com.diracnote.maps.JmhBenchmark.ConcurrentHashMap_PUT_Single_Thread":
+  43970.325 ±(99.9%) 1633.023 ns/op [Average]
+  (min, avg, max) = (41418.754, 43970.325, 48709.940), stdev = 1880.592
+  CI (99.9%): [42337.302, 45603.349] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.diracnote.maps.JmhBenchmark.HashMap_PUT_Single_Thread
+
+# Run progress: 50.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 20784.789 ns/op
+# Warmup Iteration   2: 23164.810 ns/op
+# Warmup Iteration   3: 14604.155 ns/op
+# Warmup Iteration   4: 15120.133 ns/op
+# Warmup Iteration   5: 10944.864 ns/op
+# Warmup Iteration   6: 11673.033 ns/op
+# Warmup Iteration   7: 11621.254 ns/op
+# Warmup Iteration   8: 12274.990 ns/op
+# Warmup Iteration   9: 11639.612 ns/op
+# Warmup Iteration  10: 11017.390 ns/op
+# Warmup Iteration  11: 11877.310 ns/op
+# Warmup Iteration  12: 13050.937 ns/op
+# Warmup Iteration  13: 11501.459 ns/op
+# Warmup Iteration  14: 11504.344 ns/op
+# Warmup Iteration  15: 12697.798 ns/op
+# Warmup Iteration  16: 11932.137 ns/op
+# Warmup Iteration  17: 11511.802 ns/op
+# Warmup Iteration  18: 13003.613 ns/op
+# Warmup Iteration  19: 13713.703 ns/op
+# Warmup Iteration  20: 11232.913 ns/op
+Iteration   1: 11499.770 ns/op
+Iteration   2: 11753.675 ns/op
+Iteration   3: 12973.780 ns/op
+Iteration   4: 12767.032 ns/op
+Iteration   5: 13371.557 ns/op
+Iteration   6: 13873.765 ns/op
+Iteration   7: 12232.385 ns/op
+Iteration   8: 12669.548 ns/op
+Iteration   9: 12080.557 ns/op
+Iteration  10: 11880.277 ns/op
+Iteration  11: 11438.970 ns/op
+Iteration  12: 12210.199 ns/op
+Iteration  13: 12177.906 ns/op
+Iteration  14: 11958.525 ns/op
+Iteration  15: 11940.856 ns/op
+Iteration  16: 11322.508 ns/op
+Iteration  17: 12407.582 ns/op
+Iteration  18: 12811.109 ns/op
+Iteration  19: 12689.358 ns/op
+Iteration  20: 12654.615 ns/op
+
+
+Result "com.diracnote.maps.JmhBenchmark.HashMap_PUT_Single_Thread":
+  12335.699 ±(99.9%) 566.676 ns/op [Average]
+  (min, avg, max) = (11322.508, 12335.699, 13873.765), stdev = 652.584
+  CI (99.9%): [11769.023, 12902.374] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:20
+
+Benchmark                                         Mode  Cnt      Score      Error  Units
+JmhBenchmark.ConcurrentHashMap_PUT_Single_Thread  avgt   20  43970.325 ± 1633.023  ns/op
+JmhBenchmark.HashMap_PUT_Single_Thread            avgt   20  12335.699 ±  566.676  ns/op
